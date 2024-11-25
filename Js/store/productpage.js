@@ -1,5 +1,5 @@
 document.addEventListener('alpine:init', () => {
-    Alpine.store('home', {
+    Alpine.store('productpage', {
         products: [],
 
         init() {

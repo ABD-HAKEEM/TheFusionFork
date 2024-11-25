@@ -1,3 +1,4 @@
+
 .container-home{
   overflow-x: hidden;
   overflow-y: scroll;
@@ -116,3 +117,4 @@ swiper-slide img {
   66.64%, 79.3% { transform: translateY(-50%); }
   83.3%, 95.96% { transform: translateY(-25%); }
 }
+
