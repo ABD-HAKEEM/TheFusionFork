@@ -157,22 +157,21 @@
       <h1 class="text-3xl font-bold mb-4">Chef's Table VR Experience</h1>
       <p class="text-lg mb-6">Immerse yourself in a chef's kitchen and explore the scene in 360°.</p>
       <div class="relative w-full max-w-3xl mx-auto aspect-w-16 aspect-h-9">
-        <!-- A-Frame Scene -->
-        <a-scene>
-          <!-- Skybox with 360° video -->
-          <a-videosphere src="#chefTableVideo" rotation="0 180 0"></a-videosphere>
 
-          <!-- Assets -->
+        <a-scene>
+          
+          <a-videosphere src="#chefTableVideo" rotation="0 360 0"></a-videosphere>
+
+        
           <a-assets>
             <video id="chefTableVideo" src="/image/Restaurant 360° .mp4" autoplay loop="true" crossorigin="anonymous"
               muted></video>
           </a-assets>
 
-          <!-- Lighting -->
+          
           <a-light type="ambient" color="#ffffff"></a-light>
 
-          <!-- Camera -->
-          <a-camera position="0 1.6 0">
+          <a-camera position="0 1.0 0">
             <a-cursor></a-cursor>
           </a-camera>
         </a-scene>

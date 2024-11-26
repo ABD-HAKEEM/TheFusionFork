@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine.js Language Store</title>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js" defer></script>
+</head>
+<body>
+    <div x-data>
+        <label for="languageSelect">Select Language:</label>
+        <select id="languageSelect" @change="Alpine.store('lang').storelanguage($event.target.value)">
+            <option value="en">English</option>
+            <option value="it">Italian</option>
+            <option value="jp">Japanese</option>
+        </select>
+        <h1 x-text="'Current Language: ' + Alpine.store('lang').language"></h1>
+    </div>
+
+    <script>
+      document.addEventListener('alpine:init', () => {
+        Alpine.store('lang', {
+            // Initialize language from localStorage or default to 'en'
+            language: JSON.parse(localStorage.getItem('language')) || 'en',
+    
+            // Authenticate and set the selected language
+            storelanguage(languageselector) {
+                if (['en', 'it', 'jp'].includes(languageselector)) {
+                    // Set the language in localStorage
+                    localStorage.setItem('language', JSON.stringify(languageselector));
+                    this.language = languageselector;
+                    
+                    // Redirect to the appropriate page based on the selected language
+                    this.redirectToLanguagePage(languageselector);
+                }
+                return false; // Invalid language selector
+            },
+    
+            // Function to redirect based on language
+            redirectToLanguagePage(language) {
+                let url = '/home.php'; // Default page
+                if (language === 'it') {
+                    url = '/it/home.php';
+                } else if (language === 'jp') {
+                    url = '/jp/home.php';
+                }
+                else 
+                {
+                    url = '/en/home.php';
+                }
+    
+                // Redirect to the page
+                window.location.href = url;
+            }
+        });
+    });
+    </script>
+</body>
+</html>
+
+
+<div class="w-1/2 sm:w-1/4 p-6">
+    <img src="/image/catering-service-1.jpg" alt="Catering Service 1" class="w-full h-auto rounded-lg shadow-lg">
+    <h3 class="text-lg font-semibold text-gray-800 mt-6">Meal Planning</h3>
+    <p class="text-sm text-gray-600">
+      Plan your meals with our expert chefs and create a unique and enjoyable dining experience.
+    </p>
+  </div>
+  <div class="w-1/2 sm:w-1/4 p-6">

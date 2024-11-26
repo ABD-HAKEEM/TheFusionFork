@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Fusion Fork</title>
-  <link rel="icon" href="" type="image/x-icon">
+  <link rel="icon" href="/image/logo (1).webp" type="image/x-icon">
+
 
   <link rel="stylesheet" href="/CSS/style.css">
 
@@ -68,9 +69,20 @@
 
 
         </ul>
-        <div class="sm:hidden md:block">
 
+
+        <div x-data class="hidden md:block ml-10">
+          <select id="languageSelect"
+            @change="Alpine.store('lang').storelanguage($event.target.value)"
+            class="flex items-center text-sm pe-1 font-medium text-White rounded-md hover:text-blue-600 dark:hover:text-blue-500 md:me-0 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-white bg-transparent">
+            <option value="" disabled selected class="text-white">Select The Language</option>
+            <option value="en" class="text-black">English</option>
+            <option value="it" class="text-black">Italiano</option>
+            <option value="jp" class="text-black">日本語</option>
+          </select>
         </div>
+
+
       </nav>
     </div>
 
@@ -147,6 +159,7 @@
 
 
     </div>
+
   </header>
 
   <main>
@@ -155,11 +168,46 @@
       <div
         class="concept concept-five main-nav flex justify-center items-center absolute  w-full z-20 mt-[200px] md:mt-72 lg:mt-72 font-serif text-slate-50 sm:x-auto">
         <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-center ">
-          <span class="char">N</span>
+          <span class="char">F</span>
+          <span class="char">l</span>
           <span class="char">a</span>
-          <span class="char">t</span>
+          <span class="char">v</span>
+          <span class="char">o</span>
+          <span class="char">r</span>
+          <span class="char">s</span>
+          <span class="char ml-1 md:ml-2 lg:ml-2 mr-0 md:mr-2 lg:mr-2 "> </span>
+          <span class="char">A</span>
+          <span class="char">r</span>
+          <span class="char">e</span>
+          <span class="char ml-1 md:ml-2 lg:ml-2 mr-0 md:mr-2 lg:mr-2 "> </span>
+          <span class="char">O</span>
           <span class="char">u</span>
           <span class="char">r</span>
+          <span class="char ml-1 md:ml-2 lg:ml-2 mr-0 md:mr-2 lg:mr-2 "> </span>
+          <span class="char">P</span>
+          <span class="char">a</span>
+          <span class="char">s</span>
+          <span class="char">s</span>
+          <span class="char">i</span>
+          <span class="char">o</span>
+          <span class="char">n</span>
+          <span class="char">.</span>
+
+        </h2>
+      </div>
+
+      <div
+        class="concept concept-five flex justify-center items-center absolute  w-full z-20 mt-[250px] md:mt-80 lg:mt-80 font-serif text-slate-50">
+        <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-center">
+          <span class="char">E</span>
+          <span class="char">x</span>
+          <span class="char">c</span>
+          <span class="char">e</span>
+          <span class="char">l</span>
+          <span class="char">l</span>
+          <span class="char">e</span>
+          <span class="char">n</span>
+          <span class="char">c</span>
           <span class="char">e</span>
           <span class="char ml-1 md:ml-2 lg:ml-2 mr-0 md:mr-2 lg:mr-2 "> </span>
           <span class="char">I</span>
@@ -169,52 +217,15 @@
           <span class="char">u</span>
           <span class="char">r</span>
           <span class="char ml-1 md:ml-2 lg:ml-2 mr-0 md:mr-2 lg:mr-2 "> </span>
-          <span class="char">I</span>
-          <span class="char">n</span>
-          <span class="char">s</span>
-          <span class="char">p</span>
-          <span class="char">i</span>
+          <span class="char">P</span>
           <span class="char">r</span>
-          <span class="char">a</span>
-          <span class="char">t</span>
-          <span class="char">i</span>
           <span class="char">o</span>
-          <span class="char">n</span>
+          <span class="char">m</span>
+          <span class="char">i</span>
+          <span class="char">s</span>
+          <span class="char">e</span>
           <span class="char">.</span>
-        </h2>
-      </div>
 
-      <div
-        class="concept concept-five flex justify-center items-center absolute  w-full z-20 mt-[250px] md:mt-80 lg:mt-80 font-serif text-slate-50">
-        <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-center">
-          <span class="char">S</span>
-          <span class="char">a</span>
-          <span class="char">t</span>
-          <span class="char">i</span>
-          <span class="char">s</span>
-          <span class="char">f</span>
-          <span class="char">a</span>
-          <span class="char">c</span>
-          <span class="char">t</span>
-          <span class="char">i</span>
-          <span class="char">o</span>
-          <span class="char">n</span>
-          <span class="char ml-1 md:ml-2 lg:ml-2 mr-0 md:mr-2 lg:mr-2"></span>
-          <span class="char">I</span>
-          <span class="char">s</span>
-          <span class="char ml-1 md:ml-2 lg:ml-2 mr-0 md:mr-2 lg:mr-2"> </span>
-          <span class="char">O</span>
-          <span class="char">u</span>
-          <span class="char">r</span>
-          <span class="char ml-1 md:ml-2 lg:ml-2 mr-0 md:mr-2 lg:mr-2"> </span>
-          <span class="char">M</span>
-          <span class="char">i</span>
-          <span class="char">s</span>
-          <span class="char">s</span>
-          <span class="char">i</span>
-          <span class="char">o</span>
-          <span class="char">n</span>
-          <span class="char">.</span>
         </h2>
       </div>
 
@@ -262,46 +273,158 @@
     <!-- Section 2 -->
 
     <section class="container mx-auto px-6 py-20 md:flex items-center justify-between">
-  
-  <div class="w-full md:w-1/2 pr-0 md:pr-10 mb-8 md:mb-0">
-    <img src="/image/pexels-cottonbro-4253312.jpg" alt="Chef Image" class="w-full h-auto rounded-lg shadow-lg">
-  </div>
 
-  <div class="w-full md:w-1/2 text-center md:text-right">
- 
-    <h1 class="text-3xl md:text-4xl font-serif font-extrabold text-gray-800 mb-4">The Fusion Fork</h1>
+      <div class="w-full md:w-1/2 pr-0 md:pr-10 mb-8 md:mb-0">
+        <img src="/image/pexels-cottonbro-4253312.jpg" alt="Chef Image" class="w-full h-auto rounded-lg shadow-lg">
+      </div>
 
-    <p class="text-lg text-gray-600 mb-6">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quos eaque, natus accusamus at, consectetur fugiat facilis eius debitis explicabo fugit, nam corrupti excepturi consequuntur dignissimos magnam quidem beatae. Sapiente.
-    </p>
+      <div class="w-full md:w-1/2 text-center md:text-right">
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-8">
-      <div class="text-center">
-        <h3 class="text-3xl font-bold text-gray-800">18</h3>
-        <p class="text-sm text-gray-500">YEARS OF EXPERIENCE</p>
-      </div>
-      <div class="text-center">
-        <h3 class="text-3xl font-bold text-gray-800">100</h3>
-        <p class="text-sm text-gray-500">MENUS/DISH</p>
-      </div>
-      <div class="text-center">
-        <h3 class="text-3xl font-bold text-gray-800">50</h3>
-        <p class="text-sm text-gray-500">STAFFS</p>
-      </div>
-      <div class="text-center">
-        <h3 class="text-3xl font-bold text-gray-800">15,000</h3>
-        <p class="text-sm text-gray-500">HAPPY CUSTOMERS</p>
-      </div>
-    </div>
+        <h1 class="text-3xl md:text-4xl font-serif font-extrabold text-gray-800 mb-4">The Fusion Fork</h1>
 
-    <!-- Contact Info -->
+        <p class="text-lg text-gray-600 mb-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quos eaque, natus accusamus at, consectetur fugiat facilis eius debitis explicabo fugit, nam corrupti excepturi consequuntur dignissimos magnam quidem beatae. Sapiente.
+        </p>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-8">
+          <div class="text-center">
+            <h3 class="text-3xl font-bold text-gray-800">18</h3>
+            <p class="text-sm text-gray-500">YEARS OF EXPERIENCE</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-3xl font-bold text-gray-800">100</h3>
+            <p class="text-sm text-gray-500">MENUS/DISH</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-3xl font-bold text-gray-800">50</h3>
+            <p class="text-sm text-gray-500">STAFFS</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-3xl font-bold text-gray-800">15,000</h3>
+            <p class="text-sm text-gray-500">HAPPY CUSTOMERS</p>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <p class="text-lg font-semibold text-gray-800 mb-2">Mon - Sun</p>
+          <p class="text-lg font-semibold text-gray-800 mb-6">11AM - 12PM</p>
+          <p class="text-2xl font-bold text-orange-500">+ 1-9781234567</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="mt-20">
+      <h2 class="text-6xl text-center mb-14">Catering Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-2 justify-items-center">
+        <!-- Birthday Party Card -->
+        <div class="card text-center w-80 bg-gray-100 rounded-lg p-5">
+          <i class="fa fa-birthday-cake text-5xl text-[#fde047] mb-5" aria-hidden="true"></i>
+          <div>
+            <span class="text-lg font-semibold">Birthday Party</span>
+          </div>
+          <p class="text-sm mt-4 text-center">Celebrate your special day with our customized catering services. Delicious food, perfect for your birthday event!</p>
+        </div>
+
+        <!-- Business Meetings Card -->
+        <div class="card text-center w-80 bg-gray-100 rounded-lg p-5">
+          <i class="fa fa-users text-5xl text-[#fde047] mb-5" aria-hidden="true"></i>
+          <div>
+            <span class="text-lg font-semibold">Business Meetings</span>
+          </div>
+          <p class="text-sm mt-4 text-center">Impress your clients and colleagues with our professional catering options for business meetings and corporate events.</p>
+        </div>
+
+        <!-- Wedding Party Card -->
+        <div class="card text-center w-80 bg-gray-100 rounded-lg p-5">
+          <i class="fa fa-cutlery text-5xl text-[#fde047] mb-5" aria-hidden="true"></i>
+          <div>
+            <span class="text-lg font-semibold">Wedding Party</span>
+          </div>
+          <p class="text-sm mt-4 text-center">Make your wedding day unforgettable with our exquisite menu, tailored to fit your taste and style.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-20 container mx-auto py-20">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Image on the left -->
+    <img src="/image/food.jpg" alt="Japanese food" class="w-full h-auto">
+
+    <!-- Text and images with icons -->
     <div>
-      <p class="text-lg font-semibold text-gray-800 mb-2">Mon - Sun</p>
-      <p class="text-lg font-semibold text-gray-800 mb-6">11AM - 12PM</p>
-      <p class="text-2xl font-bold text-orange-500">+ 1-9781234567</p>
+      <h3 class="text-3xl font-bold text-gray-800 text- md:text-start">Discover Our Food</h3>
+      <p class="text-sm text-gray-500 mt-4 text-center md:text-start">
+        Our menu includes a variety of delicious and exquisite dishes, ranging from Italian, Indian, and Japanese
+        cuisines. Each dish is carefully selected to provide an unforgettable experience for our guests.
+      </p>
+      
+      <!-- Small food images with cart icons -->
+      <div class="mt-5 flex gap-3">
+        <!-- Food item 1 -->
+        <div class="relative w-28 h-32 md:w-56 md:h-64">
+          <img src="/image/smfood1 (2).jpg" alt="Food Item" class="w-full h-full rounded-xl object-cover">
+          <a href="/productpage.php"><i class="fa fa-shopping-cart absolute bottom-2 right-2 text-white bg-black p-2 rounded-full animate-pulse " aria-hidden="true"></i></a>
+        </div>
+        <!-- Food item 2 -->
+        <div class="relative w-28 h-32 md:w-56 md:h-64">
+          <img src="/image/smfood1 (3).jpg" alt="Food Item" class="w-full h-full rounded-xl object-cover">
+          <a href="/productpage.php"><i class="fa fa-shopping-cart absolute bottom-2 right-2 text-white bg-black p-2 rounded-full animate-pulse " aria-hidden="true"></i></a>
+         </div>
+        <!-- Food item 3 -->
+        <div class="relative w-28 h-32 md:w-56 md:h-64">
+          <img src="/image/smfood1.jpg" alt="Food Item" class="w-full h-full rounded-xl object-cover">
+          <a href="/productpage.php"><i class="fa fa-shopping-cart absolute bottom-2 right-2 text-white bg-black p-2 rounded-full animate-pulse " aria-hidden="true"></i></a>
+          </div>
+      </div>
     </div>
   </div>
 </section>
+
+
+
+    <section class="mt-20">
+      <h2 class="text-4xl text-center mb-14">Meet Our Chefs</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-2 justify-items-center">
+        <!-- Team Member 1 -->
+        <div class="text-center">
+          <img class="w-80 h-80 object-cover rounded-full mb-6" src="/image/chefs (4).jpg" alt="Team Member 1">
+
+
+          <span class="text-lg font-semibold">Chef Mario Rossi</span>
+          <p class="text-sm text-gray-500">Senior Executive Chef</p>
+        </div>
+        
+        <!-- Team Member 2 -->
+        <div class="text-center">
+          <img class="w-80 h-80 object-cover rounded-full mb-6" src="/image/chefs (1).jpg" alt="Team Member 1">
+
+
+          <span class="text-lg font-semibold">Chef Emily Carter</span>
+          <p class="text-sm text-gray-500">Italian Cuisine Specialist</p>
+        </div>
+        
+        <!-- Team Member 3 -->
+        <div class="text-center">
+          <img class="w-80 h-80 object-cover rounded-full mb-6" src="/image/chefs (2).jpg" alt="Team Member 1">
+
+
+          <span class="text-lg font-semibold">Chef Hiro Tanaka</span>
+          <p class="text-sm text-gray-500">Japanese Cuisine Specialist</p>
+        </div>
+        
+        <!-- Team Member 4 -->
+        <div class="text-center">
+          <img class="w-80 h-80 object-cover rounded-full mb-6" src="/image/chefs (3).jpg" alt="Team Member 1">
+
+
+          <span class="text-lg font-semibold">Chef John Doe</span>
+          <p class="text-sm text-gray-500">Indian Cuisine Specialist</p>
+        </div>
+        </div>
+    </section>
+
 
 
   </main>
@@ -372,7 +495,7 @@
     </div>
 
     <div class="text-center text-sm text-gray-400 mt-6">
-      &copy; 2024  Abdul Hakeem. All rights reserved.
+      &copy; 2024 Abdul Hakeem. All rights reserved.
     </div>
   </footer>
 
@@ -453,6 +576,36 @@
         });
       };
     }
+  </script>
+
+  <script>
+    document.addEventListener('alpine:init', () => {
+      Alpine.store('lang', {
+        language: JSON.parse(localStorage.getItem('language')) || 'en',
+
+        storelanguage(languageselector) {
+          if (['en', 'it', 'jp'].includes(languageselector)) {
+            localStorage.setItem('language', JSON.stringify(languageselector));
+            this.language = languageselector;
+
+            this.updatePageContent(languageselector);
+          }
+        },
+
+        updatePageContent(language) {
+          this.redirectToLanguagePage(language);
+        },
+
+        redirectToLanguagePage(language) {
+          let url = '';
+          if (language === 'it') url = '/pages/it/index.php';
+          if (language === 'jp') url = '/pages/jp/index.php';
+          if (language === 'en') url = '/pages/en/index.php';
+
+          if (url) window.location.href = url;
+        }
+      });
+    });
   </script>
 
   <script type="text/javascript" src="Js\store\home.js"></script>
