@@ -315,15 +315,15 @@
             <p class="text-sm text-gray-500">YEARS OF EXPERIENCE</p>
           </div>
           <div class="text-center">
-            <h3 class="text-3xl font-bold text-gray-800">100</h3>
+            <h3 class="text-3xl font-bold text-gray-800">50</h3>
             <p class="text-sm text-gray-500">MENUS/DISH</p>
           </div>
           <div class="text-center">
-            <h3 class="text-3xl font-bold text-gray-800">50</h3>
+            <h3 class="text-3xl font-bold text-gray-800">40</h3>
             <p class="text-sm text-gray-500">STAFFS</p>
           </div>
           <div class="text-center">
-            <h3 class="text-3xl font-bold text-gray-800">15,000</h3>
+            <h3 class="text-3xl font-bold text-gray-800">10,000</h3>
             <p class="text-sm text-gray-500">HAPPY CUSTOMERS</p>
           </div>
         </div>
@@ -337,6 +337,129 @@
       </div>
     </section>
 
+    <section class="mt-20">
+      <h2 class="text-6xl text-center mb-14">
+        Servizi di ristorazione</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-2 justify-items-center">
+        <!-- Birthday Party Card -->
+        <div class="card text-center w-80 bg-gray-100 rounded-lg p-5">
+          <i class="fa fa-birthday-cake text-5xl text-[#fde047] mb-5" aria-hidden="true"></i>
+          <div>
+            <span class="text-lg font-semibold">
+              Festa di compleanno</span>
+          </div>
+          <p class="text-sm mt-4 text-center">Festeggia il tuo giorno speciale con i nostri servizi catering personalizzati. Cibo delizioso, perfetto per il tuo evento di compleanno!</p>
+        </div>
+
+        <!-- Business Meetings Card -->
+        <div class="card text-center w-80 bg-gray-100 rounded-lg p-5">
+          <i class="fa fa-users text-5xl text-[#fde047] mb-5" aria-hidden="true"></i>
+          <div>
+            <span class="text-lg font-semibold">
+              Riunioni d'affari</span>
+          </div>
+          <p class="text-sm mt-4 text-center">Stupisci i tuoi clienti e colleghi con le nostre opzioni di catering professionale per riunioni di lavoro ed eventi aziendali.</p>
+        </div>
+
+        <!-- Wedding Party Card -->
+        <div class="card text-center w-80 bg-gray-100 rounded-lg p-5">
+          <i class="fa fa-cutlery text-5xl text-[#fde047] mb-5" aria-hidden="true"></i>
+          <div>
+            <span class="text-lg font-semibold">
+              Festa di matrimonio</span>
+          </div>
+          <p class="text-sm mt-4 text-center">
+            Rendi indimenticabile il giorno del tuo matrimonio con il nostro squisito menu, creato su misura per soddisfare il tuo gusto e il tuo stile.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-20 container mx-auto py-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Image on the left -->
+        <img src="/image/food.jpg" alt="Japanese food" class="w-full h-auto">
+
+        <!-- Text and images with icons -->
+        <div>
+          <h3 class="text-3xl font-bold text-gray-800 text- md:text-start">
+          Scopri il nostro cibo</h3>
+          <p class="text-sm text-gray-500 mt-4 text-center md:text-start">
+          Il nostro menu comprende una varietà di piatti deliziosi e squisiti, che spaziano dalla cucina italiana, indiana e giapponese
+          cucine. Ogni piatto è accuratamente selezionato per offrire un'esperienza indimenticabile ai nostri ospiti.
+          </p>
+
+          <!-- Small food images with cart icons -->
+          <div class="mt-5 flex gap-3">
+            <!-- Food item 1 -->
+            <div class="relative w-28 h-32 md:w-56 md:h-64">
+              <img src="/image/smfood1 (2).jpg" alt="Food Item" class="w-full h-full rounded-xl object-cover">
+              <a href="/productpage.php"><i class="fa fa-shopping-cart absolute bottom-2 right-2 text-white bg-black p-2 rounded-full animate-pulse " aria-hidden="true"></i></a>
+            </div>
+            <!-- Food item 2 -->
+            <div class="relative w-28 h-32 md:w-56 md:h-64">
+              <img src="/image/smfood1 (3).jpg" alt="Food Item" class="w-full h-full rounded-xl object-cover">
+              <a href="/productpage.php"><i class="fa fa-shopping-cart absolute bottom-2 right-2 text-white bg-black p-2 rounded-full animate-pulse " aria-hidden="true"></i></a>
+            </div>
+            <!-- Food item 3 -->
+            <div class="relative w-28 h-32 md:w-56 md:h-64">
+              <img src="/image/smfood1.jpg" alt="Food Item" class="w-full h-full rounded-xl object-cover">
+              <a href="/productpage.php"><i class="fa fa-shopping-cart absolute bottom-2 right-2 text-white bg-black p-2 rounded-full animate-pulse " aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="mt-20">
+      <h2 class="text-4xl text-center mb-14">
+      Incontra i nostri chef</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-2 justify-items-center">
+        <!-- Team Member 1 -->
+        <div class="text-center">
+          <img class="w-80 h-80 object-cover rounded-full mb-6" src="/image/chefs (4).jpg" alt="Team Member 1">
+
+
+          <span class="text-lg font-semibold">
+          Lo chef Mario Rossi</span>
+          <p class="text-sm text-gray-500">
+          Cuoco esecutivo senior</p>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="text-center">
+          <img class="w-80 h-80 object-cover rounded-full mb-6" src="/image/chefs (1).jpg" alt="Team Member 1">
+
+
+          <span class="text-lg font-semibold">
+          La chef Emily Carter</span>
+          <p class="text-sm text-gray-500">
+          Specialista della cucina italiana</p>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="text-center">
+          <img class="w-80 h-80 object-cover rounded-full mb-6" src="/image/chefs (2).jpg" alt="Team Member 1">
+
+
+          <span class="text-lg font-semibold">
+          Lo chef Hiro Tanaka</span>
+          <p class="text-sm text-gray-500">
+          Specialista della cucina giapponese</p>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="text-center">
+          <img class="w-80 h-80 object-cover rounded-full mb-6" src="/image/chefs (3).jpg" alt="Team Member 1">
+
+
+          <span class="text-lg font-semibold">Lo chef John Doe</span>
+          <p class="text-sm text-gray-500">
+          Specialista della cucina indiana</p>
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -354,15 +477,16 @@
       </div>
 
       <div class="text-center sm:text-left">
-        <h3 class="text-lg font-semibold text-white mb-4">Opening Hours</h3>
+        <h3 class="text-lg font-semibold text-white mb-4">
+        Orari di apertura</h3>
         <ul class="text-sm">
-          <li class="mb-2 hover:text-blue-400">Monday - 11:00 - 24:00</li>
-          <li class="mb-2 hover:text-blue-400">Tuesday - 11:00 - 24:00</li>
-          <li class="mb-2 hover:text-blue-400">Wednesday - 11:00 - 24:00</li>
-          <li class="mb-2 hover:text-blue-400">Thursday - 11:00 - 24:00</li>
-          <li class="mb-2 hover:text-blue-400">Friday - 13:00 - 24:00</li>
-          <li class="mb-2 hover:text-blue-400">Saturday - 11:00 - 24:00</li>
-          <li class="mb-2 hover:text-blue-400">Sunday - 11:00 - 24:00</li>
+          <li class="mb-2 hover:text-blue-400">Lunedi - 11:00 - 24:00</li>
+          <li class="mb-2 hover:text-blue-400">Martedì - 11:00 - 24:00</li>
+          <li class="mb-2 hover:text-blue-400">Mercoledì - 11:00 - 24:00</li>
+          <li class="mb-2 hover:text-blue-400">Giovedì - 11:00 - 24:00</li>
+          <li class="mb-2 hover:text-blue-400">Venerdì - 13:00 - 24:00</li>
+          <li class="mb-2 hover:text-blue-400">Sabato - 11:00 - 24:00</li>
+          <li class="mb-2 hover:text-blue-400">Domenica - 11:00 - 24:00</li>
         </ul>
       </div>
 
@@ -370,13 +494,13 @@
       <div class="text-center sm:text-left">
         <h3 class="text-lg font-semibold text-white mb-4">Contact Us</h3>
         <p class="text-sm">
-          <span class="font-semibold">Address:</span> 1234 Market Street, Suite 100<br>
-          <span class="font-semibold">Phone:</span> (123) 456-7890<br>
-          <span class="font-semibold">Email:</span> support@example.com
+          <span class="font-semibold">Indirizzo:</span> 1234 Market Street, Suite 100<br>
+          <span class="font-semibold">Telefono:</span> (123) 456-7890<br>
+          <span class="font-semibold">E-mail:</span> support@example.com
         </p>
         <!-- Social Media -->
         <div>
-          <h3 class="text-lg font-semibold text-white mb-4 mt-10">Follow Us</h3>
+          <h3 class="text-lg font-semibold text-white mb-4 mt-10">Seguici</h3>
           <div class="flex justify-center space-x-4">
             <a href="#" class="text-gray-400 hover:text-white">
               <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
@@ -488,37 +612,9 @@
     }
   </script>
 
-  <script>
-    document.addEventListener('alpine:init', () => {
-      Alpine.store('lang', {
-        language: JSON.parse(localStorage.getItem('language')) || 'en',
+  
 
-        storelanguage(languageselector) {
-          if (['en', 'it', 'jp'].includes(languageselector)) {
-            localStorage.setItem('language', JSON.stringify(languageselector));
-            this.language = languageselector;
-
-            this.updatePageContent(languageselector);
-          }
-        },
-
-        updatePageContent(language) {
-          this.redirectToLanguagePage(language);
-        },
-
-        redirectToLanguagePage(language) {
-          let url = '';
-          if (language === 'it') url = '/pages/it/index.php';
-          if (language === 'jp') url = '/pages/jp/index.php';
-          if (language === 'en') url = '/pages/en/index.php';
-
-          if (url) window.location.href = url;
-        }
-      });
-    });
-  </script>
-
-  <script type="text/javascript" src="Js\store\home.js"></script>
+<script type="text/javascript" src="/Js/appindex.js"></script>
 
 
 </body>

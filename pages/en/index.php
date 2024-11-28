@@ -30,7 +30,7 @@
       <nav class="main-nav flex justify-end items-left absolute top-0 right-44 w-full z-20 mt-10">
         <ul class="hidden lg:flex list_view space-x-8 mt-10px">
           <li class="relative group">
-            <a href="/productpage.php" class="hover:text-gray-600 text-White">Menu</a>
+            <a href="/pages/en/productpage.php" class="hover:text-gray-600 text-White">Menu</a>
 
           </li>
           <li class="hover:text-gray-600 text-White">|</li>
@@ -43,7 +43,7 @@
           <li class="hover:text-gray-600 text-White">|</li>
 
           <li class="relative group">
-            <a href="/index.php" class="hover:text-gray-600 text-White">The Fusion Fork</a>
+            <a href="/pages/en/index.php" class="hover:text-gray-600 text-White">The Fusion Fork</a>
 
           </li>
           <li class="hover:text-gray-600 text-White">|</li>
@@ -106,7 +106,7 @@
         </button>
 
 
-        <nav class="flex flex-col items-center max-w-xs mt-16 md:mt-24 text-center justify-center mx-auto">
+        <nav class="flex flex-col items-center max-w-xs text-center justify-center mx-auto">
           <ul class="space-y-1">
             <li><a href="#!"
                 class="block h-12 text-gray-400 text-lg underline-animation text-orange-400">The Fusion Fork</a></li>
@@ -127,12 +127,19 @@
             <li><a href="#section4"
                 class="block h-12 text-gray-400 text-lg underline-animation text-white">Enquiry</a></li>
 
-
+                <select id="languageSelect"
+                  @change="Alpine.store('lang').storelanguage($event.target.value)"
+                  class="flex items-center text-sm pe-1 font-medium text-White rounded-md hover:text-blue-600 dark:hover:text-blue-500 md:me-0 bg-transparent">
+                  <option value="" disabled selected class="text-white">Select The Language</option>
+                  <option value="en" class="text-black">English</option>
+                  <option value="it" class="text-black">Italiano</option>
+                  <option value="jp" class="text-black">日本語</option>
+          </select>
 
           </ul>
         </nav>
 
-        <div class="md:mt-56">
+        <div class="mt-36">
           <ul class="flex space-x-2 mt-5 items-center justify-center mx-auto">
             <li><a href="#" class="p-2 text-yellow-500 hover:bg-fuchsia-600 rounded-xl"><span
                   class="fab fa-twitter"></span></a></li>
@@ -283,8 +290,7 @@
         <h1 class="text-3xl md:text-4xl font-serif font-extrabold text-gray-800 mb-4">The Fusion Fork</h1>
 
         <p class="text-lg text-gray-600 mb-6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quos eaque, natus accusamus at, consectetur fugiat facilis eius debitis explicabo fugit, nam corrupti excepturi consequuntur dignissimos magnam quidem beatae. Sapiente.
-        </p>
+        Welcome to The Fusion Fork, where culinary artistry meets exceptional hospitality. With 18 years of experience, our team passionately creates a diverse menu of 100 unique dishes, served by 50 dedicated staff members. Join our 15,000 satisfied customers and enjoy an unforgettable gastronomic experience. We are open every day from 11:00 to 00:00. The perfect meal awaits you!</p>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-8">
           <div class="text-center">
@@ -292,15 +298,15 @@
             <p class="text-sm text-gray-500">YEARS OF EXPERIENCE</p>
           </div>
           <div class="text-center">
-            <h3 class="text-3xl font-bold text-gray-800">100</h3>
+            <h3 class="text-3xl font-bold text-gray-800">50 + </h3>
             <p class="text-sm text-gray-500">MENUS/DISH</p>
           </div>
           <div class="text-center">
-            <h3 class="text-3xl font-bold text-gray-800">50</h3>
+            <h3 class="text-3xl font-bold text-gray-800">40</h3>
             <p class="text-sm text-gray-500">STAFFS</p>
           </div>
           <div class="text-center">
-            <h3 class="text-3xl font-bold text-gray-800">15,000</h3>
+            <h3 class="text-3xl font-bold text-gray-800">10,000</h3>
             <p class="text-sm text-gray-500">HAPPY CUSTOMERS</p>
           </div>
         </div>
@@ -309,7 +315,7 @@
         <div>
           <p class="text-lg font-semibold text-gray-800 mb-2">Mon - Sun</p>
           <p class="text-lg font-semibold text-gray-800 mb-6">11AM - 12PM</p>
-          <p class="text-2xl font-bold text-orange-500">+ 1-9781234567</p>
+          <p class="text-2xl font-bold text-orange-500">+94 761122226</p>
         </div>
       </div>
     </section>
@@ -348,39 +354,39 @@
     </section>
 
     <section class="mt-20 container mx-auto py-20">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-    <!-- Image on the left -->
-    <img src="/image/food.jpg" alt="Japanese food" class="w-full h-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Image on the left -->
+        <img src="/image/food.jpg" alt="Japanese food" class="w-full h-auto">
 
-    <!-- Text and images with icons -->
-    <div>
-      <h3 class="text-3xl font-bold text-gray-800 text- md:text-start">Discover Our Food</h3>
-      <p class="text-sm text-gray-500 mt-4 text-center md:text-start">
-        Our menu includes a variety of delicious and exquisite dishes, ranging from Italian, Indian, and Japanese
-        cuisines. Each dish is carefully selected to provide an unforgettable experience for our guests.
-      </p>
-      
-      <!-- Small food images with cart icons -->
-      <div class="mt-5 flex gap-3">
-        <!-- Food item 1 -->
-        <div class="relative w-28 h-32 md:w-56 md:h-64">
-          <img src="/image/smfood1 (2).jpg" alt="Food Item" class="w-full h-full rounded-xl object-cover">
-          <a href="/productpage.php"><i class="fa fa-shopping-cart absolute bottom-2 right-2 text-white bg-black p-2 rounded-full animate-pulse " aria-hidden="true"></i></a>
-        </div>
-        <!-- Food item 2 -->
-        <div class="relative w-28 h-32 md:w-56 md:h-64">
-          <img src="/image/smfood1 (3).jpg" alt="Food Item" class="w-full h-full rounded-xl object-cover">
-          <a href="/productpage.php"><i class="fa fa-shopping-cart absolute bottom-2 right-2 text-white bg-black p-2 rounded-full animate-pulse " aria-hidden="true"></i></a>
-         </div>
-        <!-- Food item 3 -->
-        <div class="relative w-28 h-32 md:w-56 md:h-64">
-          <img src="/image/smfood1.jpg" alt="Food Item" class="w-full h-full rounded-xl object-cover">
-          <a href="/productpage.php"><i class="fa fa-shopping-cart absolute bottom-2 right-2 text-white bg-black p-2 rounded-full animate-pulse " aria-hidden="true"></i></a>
+        <!-- Text and images with icons -->
+        <div>
+          <h3 class="text-3xl font-bold text-gray-800 text- md:text-start">Discover Our Food</h3>
+          <p class="text-sm text-gray-500 mt-4 text-center md:text-start">
+            Our menu includes a variety of delicious and exquisite dishes, ranging from Italian, Indian, and Japanese
+            cuisines. Each dish is carefully selected to provide an unforgettable experience for our guests.
+          </p>
+
+          <!-- Small food images with cart icons -->
+          <div class="mt-5 flex gap-3">
+            <!-- Food item 1 -->
+            <div class="relative w-28 h-32 md:w-56 md:h-64">
+              <img src="/image/smfood1 (2).jpg" alt="Food Item" class="w-full h-full rounded-xl object-cover">
+              <a href="/productpage.php"><i class="fa fa-shopping-cart absolute bottom-2 right-2 text-white bg-black p-2 rounded-full animate-pulse " aria-hidden="true"></i></a>
+            </div>
+            <!-- Food item 2 -->
+            <div class="relative w-28 h-32 md:w-56 md:h-64">
+              <img src="/image/smfood1 (3).jpg" alt="Food Item" class="w-full h-full rounded-xl object-cover">
+              <a href="/productpage.php"><i class="fa fa-shopping-cart absolute bottom-2 right-2 text-white bg-black p-2 rounded-full animate-pulse " aria-hidden="true"></i></a>
+            </div>
+            <!-- Food item 3 -->
+            <div class="relative w-28 h-32 md:w-56 md:h-64">
+              <img src="/image/smfood1.jpg" alt="Food Item" class="w-full h-full rounded-xl object-cover">
+              <a href="/productpage.php"><i class="fa fa-shopping-cart absolute bottom-2 right-2 text-white bg-black p-2 rounded-full animate-pulse " aria-hidden="true"></i></a>
+            </div>
           </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
 
@@ -395,7 +401,7 @@
           <span class="text-lg font-semibold">Chef Mario Rossi</span>
           <p class="text-sm text-gray-500">Senior Executive Chef</p>
         </div>
-        
+
         <!-- Team Member 2 -->
         <div class="text-center">
           <img class="w-80 h-80 object-cover rounded-full mb-6" src="/image/chefs (1).jpg" alt="Team Member 1">
@@ -404,7 +410,7 @@
           <span class="text-lg font-semibold">Chef Emily Carter</span>
           <p class="text-sm text-gray-500">Italian Cuisine Specialist</p>
         </div>
-        
+
         <!-- Team Member 3 -->
         <div class="text-center">
           <img class="w-80 h-80 object-cover rounded-full mb-6" src="/image/chefs (2).jpg" alt="Team Member 1">
@@ -413,7 +419,7 @@
           <span class="text-lg font-semibold">Chef Hiro Tanaka</span>
           <p class="text-sm text-gray-500">Japanese Cuisine Specialist</p>
         </div>
-        
+
         <!-- Team Member 4 -->
         <div class="text-center">
           <img class="w-80 h-80 object-cover rounded-full mb-6" src="/image/chefs (3).jpg" alt="Team Member 1">
@@ -422,7 +428,7 @@
           <span class="text-lg font-semibold">Chef John Doe</span>
           <p class="text-sm text-gray-500">Indian Cuisine Specialist</p>
         </div>
-        </div>
+      </div>
     </section>
 
 
@@ -578,37 +584,9 @@
     }
   </script>
 
-  <script>
-    document.addEventListener('alpine:init', () => {
-      Alpine.store('lang', {
-        language: JSON.parse(localStorage.getItem('language')) || 'en',
 
-        storelanguage(languageselector) {
-          if (['en', 'it', 'jp'].includes(languageselector)) {
-            localStorage.setItem('language', JSON.stringify(languageselector));
-            this.language = languageselector;
 
-            this.updatePageContent(languageselector);
-          }
-        },
-
-        updatePageContent(language) {
-          this.redirectToLanguagePage(language);
-        },
-
-        redirectToLanguagePage(language) {
-          let url = '';
-          if (language === 'it') url = '/pages/it/index.php';
-          if (language === 'jp') url = '/pages/jp/index.php';
-          if (language === 'en') url = '/pages/en/index.php';
-
-          if (url) window.location.href = url;
-        }
-      });
-    });
-  </script>
-
-  <script type="text/javascript" src="Js\store\home.js"></script>
+  <script type="text/javascript" src="/Js/appindex.js"></script>
 
 
 </body>

@@ -2,23 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Fusion Fork</title>
-    <link rel="icon" href="/image/logo (1).webp" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fusion Fork</title>
+  <link rel="icon" href="/image/logo (1).webp" type="image/x-icon">
 
 
-    <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="/CSS/style.css">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-    <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="https://kit.fontawesome.com/bd921df3a8.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/bd921df3a8.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -26,7 +26,7 @@
 
 
 
-<header class="text-slate-50 ">
+  <header class="text-slate-50 ">
     <div class="relative">
       <nav class="main-nav flex justify-end items-left absolute top-0 right-44 w-full z-20 mt-10">
         <ul class="hidden lg:flex list_view space-x-8 mt-10px">
@@ -128,14 +128,14 @@
             <li><a href="#section4"
                 class="block h-12 text-gray-400 text-lg underline-animation text-white">Enquiry</a></li>
 
-                <select id="languageSelect"
-                  @change="Alpine.store('lang').storelanguage($event.target.value)"
-                  class="flex items-center text-sm pe-1 font-medium text-White rounded-md hover:text-blue-600 dark:hover:text-blue-500 md:me-0 bg-transparent">
-                  <option value="" disabled selected class="text-white">Select The Language</option>
-                  <option value="en" class="text-black">English</option>
-                  <option value="it" class="text-black">Italiano</option>
-                  <option value="jp" class="text-black">日本語</option>
-          </select>
+            <select id="languageSelect"
+              @change="Alpine.store('lang').storelanguage($event.target.value)"
+              class="flex items-center text-sm pe-1 font-medium text-White rounded-md hover:text-blue-600 dark:hover:text-blue-500 md:me-0 bg-transparent">
+              <option value="" disabled selected class="text-white">Select The Language</option>
+              <option value="en" class="text-black">English</option>
+              <option value="it" class="text-black">Italiano</option>
+              <option value="jp" class="text-black">日本語</option>
+            </select>
 
           </ul>
         </nav>
@@ -170,61 +170,61 @@
 
   </header>
 
-    <main>
+  <main>
 
-        <section class="relative">
-            <div class="relative">
-                <img src="/image/image2.webp" alt="Image" class="w-full h-auto object-cover h-screen">
+    <section class="relative">
+      <div class="relative">
+        <img src="/image/image2.webp" alt="Image" class="w-full h-auto object-cover h-screen">
 
-                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                    <h2 class="text-3xl md:text-8xl font-bold text-white mb-5">Welcome to The Fusion Fork</h2>
-                    <p class="text-lg text-white mb-5">
-                        Our restaurant offers a variety of exquisite dishes, from traditional Indian cuisine to modern European cuisine. Our menu is always updated with the latest ingredients and flavors.
-                    </p>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+          <h2 class="text-3xl md:text-8xl font-bold text-white mb-5">Welcome to The Fusion Fork</h2>
+          <p class="text-lg text-white mb-5">
+            Our restaurant offers a variety of exquisite dishes, from traditional Indian cuisine to modern European cuisine. Our menu is always updated with the latest ingredients and flavors.
+          </p>
 
-                    <button onclick="document.getElementById('section2').scrollIntoView({behavior: 'smooth'});"
-                        class="text-gray-50 duration-300 relative group cursor-pointer overflow-hidden h-12 w-56 rounded-md p-2 font-extrabold">
-                        <div class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-16 h-16 rounded-full group-hover:scale-150 duration-700 right-12 top-12 bg-yellow-500"></div>
-                        <div class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-12 h-12 rounded-full group-hover:scale-150 duration-700 right-20 -top-6 bg-orange-500"></div>
-                        <div class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-8 h-8 rounded-full group-hover:scale-150 duration-700 right-32 top-6 bg-pink-500"></div>
-                        <div class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-4 h-4 rounded-full group-hover:scale-150 duration-700 right-2 top-12 bg-red-600"></div>
-                        <p class="z-10 absolute bottom-2 left-2 text-xl font-serif text-black">Discover Our Menu</p>
-                    </button>
+          <button onclick="document.getElementById('section2').scrollIntoView({behavior: 'smooth'});"
+            class="text-gray-50 duration-300 relative group cursor-pointer overflow-hidden h-12 w-56 rounded-md p-2 font-extrabold">
+            <div class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-16 h-16 rounded-full group-hover:scale-150 duration-700 right-12 top-12 bg-yellow-500"></div>
+            <div class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-12 h-12 rounded-full group-hover:scale-150 duration-700 right-20 -top-6 bg-orange-500"></div>
+            <div class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-8 h-8 rounded-full group-hover:scale-150 duration-700 right-32 top-6 bg-pink-500"></div>
+            <div class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-4 h-4 rounded-full group-hover:scale-150 duration-700 right-2 top-12 bg-red-600"></div>
+            <p class="z-10 absolute bottom-2 left-2 text-xl font-serif text-black">Discover Our Menu</p>
+          </button>
 
 
 
-                </div>
+        </div>
 
+      </div>
+      </div>
+    </section>
+
+    <section class="py-10" id="section2">
+      <div x-data>
+        <h1 class="text-4xl font-bold text-center mt-10 text-gray-800">Menu List</h1>
+        <div class="container mx-auto mt-6 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <!-- Product Listing -->
+          <template x-for="product in $store.productpage.products" :key="product.id">
+            <div class="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+              <img src="/image/food1.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
+              <div class="p-4">
+                <h2 class="text-lg font-bold text-gray-800" x-text="product.name"></h2>
+                <p class="text-gray-600 mt-2" x-text="`Price: $${product.price}`"></p>
+                <p class="text-gray-500 text-sm mt-1" x-text="product.description"></p>
+                <p class="text-sm text-green-600 font-medium mt-2" x-text="`Stock: ${product.stock_quantity}`"></p>
+                <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 focus:outline-none">
+                  Add to Cart
+                </button>
+              </div>
             </div>
-            </div>
-        </section>
+          </template>
+        </div>
+      </div>
+    </section>
 
-        <section class="py-10" id="section2">
-            <div x-data>
-                <h1 class="text-4xl font-bold text-center mt-10 text-gray-800">Menu List</h1>
-                <div class="container mx-auto mt-6 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                    <!-- Product Listing -->
-                    <template x-for="product in $store.productpage.products" :key="product.id">
-                        <div class="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                            <img src="/image/food1.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
-                            <div class="p-4">
-                                <h2 class="text-lg font-bold text-gray-800" x-text="product.name"></h2>
-                                <p class="text-gray-600 mt-2" x-text="`Price: $${product.price}`"></p>
-                                <p class="text-gray-500 text-sm mt-1" x-text="product.description"></p>
-                                <p class="text-sm text-green-600 font-medium mt-2" x-text="`Stock: ${product.stock_quantity}`"></p>
-                                <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 focus:outline-none">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </div>
-                    </template>
-                </div>
-            </div>
-        </section>
+  </main>
 
-    </main>
-
-    <footer class="bg-gray-800 text-gray-200 py-10 mt-10">
+  <footer class="bg-gray-800 text-gray-200 py-10 mt-10">
     <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
       <!-- About Section -->
       <div class="text-center sm:text-left">
@@ -296,93 +296,75 @@
 
 
 
-    <script>
-        // Add script to handle sidebar toggle
-        const toggleButton = document.getElementById('toggleButton');
-        const hideSidebarButton = document.getElementById('hideSidebarButton');
-        const sidebar = document.getElementById('sidebar');
+  <script>
+    // Add script to handle sidebar toggle
+    const toggleButton = document.getElementById('toggleButton');
+    const hideSidebarButton = document.getElementById('hideSidebarButton');
+    const sidebar = document.getElementById('sidebar');
 
-        // Toggle sidebar visibility
-        function toggleSidebar() {
-            const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true' || false;
-            toggleButton.setAttribute('aria-expanded', !isExpanded);
-            sidebar.classList.toggle('-translate-x-full');
-        }
+    // Toggle sidebar visibility
+    function toggleSidebar() {
+      const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true' || false;
+      toggleButton.setAttribute('aria-expanded', !isExpanded);
+      sidebar.classList.toggle('-translate-x-full');
+    }
 
-        toggleButton.addEventListener('click', toggleSidebar);
-        hideSidebarButton.addEventListener('click', toggleSidebar); // Add functionality to the hide icon
+    toggleButton.addEventListener('click', toggleSidebar);
+    hideSidebarButton.addEventListener('click', toggleSidebar); // Add functionality to the hide icon
 
-        // Close sidebar on link click
-        const links = sidebar.querySelectorAll('nav a');
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                sidebar.classList.add('-translate-x-full');
-                toggleButton.setAttribute('aria-expanded', 'false');
-            });
-        });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-
-
-
-    <script>
-        var toTopButton = document.getElementById("to-top-button");
-
-        if (toTopButton) {
-
-
-            window.onscroll = function() {
-                if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-                    toTopButton.classList.remove("hidden");
-                } else {
-                    toTopButton.classList.add("hidden");
-                }
-            };
-
-            window.goToTop = function() {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            };
-        }
-    </script>
-
-<script>
-    document.addEventListener('alpine:init', () => {
-      Alpine.store('lang', {
-        language: JSON.parse(localStorage.getItem('language')) || 'en',
-
-        storelanguage(languageselector) {
-          if (['en', 'it', 'jp'].includes(languageselector)) {
-            localStorage.setItem('language', JSON.stringify(languageselector));
-            this.language = languageselector;
-
-            this.updatePageContent(languageselector);
-          }
-        },
-
-        updatePageContent(language) {
-          this.redirectToLanguagePage(language);
-        },
-
-        redirectToLanguagePage(language) {
-          let url = '';
-          if (language === 'it') url = '/pages/it/productpage.php';
-          if (language === 'jp') url = '/pages/jp/productpage.php';
-          if (language === 'en') url = '/pages/en/productpage.php';
-
-          if (url) window.location.href = url;
-        }
+    // Close sidebar on link click
+    const links = sidebar.querySelectorAll('nav a');
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        sidebar.classList.add('-translate-x-full');
+        toggleButton.setAttribute('aria-expanded', 'false');
       });
     });
   </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
-   <script type="text/javascript" src="/Js/store/productpage.js"></script>
+  <!-- Initialize Swiper -->
+
+
+
+  <script>
+    var toTopButton = document.getElementById("to-top-button");
+
+    if (toTopButton) {
+
+
+      window.onscroll = function() {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+          toTopButton.classList.remove("hidden");
+        } else {
+          toTopButton.classList.add("hidden");
+        }
+      };
+
+      window.goToTop = function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      };
+    }
+  </script>
+
+  <script>
+
+  </script>
+
+  <script>
+
+  </script>
+  <!-- Link to productpage.js -->
+  <script src="/js/store/productpage.js"></script>
+  <script src="/js/appProduct.js"></script>
+
+
+
+
 
 
 </body>

@@ -164,7 +164,7 @@
 
     </div>
 
-  </header>
+</header>
 
   <main>
     <!-- section1 -->
@@ -187,11 +187,11 @@
           <span class="char">ま</span>
           <span class="char">す</span>
           <span class="char ml-1 md:ml-2 lg:ml-2 mr-0 md:mr-2 lg:mr-2 "> </span>
-       
+
           <span class="char">。</span>
         </h2>
       </div>
-  
+
       <div
         class="concept concept-five flex justify-center items-center absolute  w-full z-20 mt-[250px] md:mt-80 lg:mt-80 font-serif text-slate-50">
         <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-center">
@@ -209,7 +209,7 @@
           <span class="char">す</span>
           <span class="char ml-1 md:ml-2 lg:ml-2 mr-0 md:mr-2 lg:mr-2"></span>
           <span class="char">。</span>
-         
+
         </h2>
       </div>
 
@@ -274,7 +274,7 @@
           <div class="text-center">
             <h3 class="text-3xl font-bold text-gray-800">5</h3>
             <p class="text-sm text-gray-500">
-            長年の経験</p>
+              長年の経験</p>
           </div>
           <div class="text-center">
             <h3 class="text-3xl font-bold text-gray-800">50 +</h3>
@@ -282,8 +282,7 @@
           </div>
           <div class="text-center">
             <h3 class="text-3xl font-bold text-gray-800">40</h3>
-            <p class="text-sm text-gray-500">
-スタッフ</p>
+            <p class="text-sm text-gray-500">スタッフ</p>
           </div>
           <div class="text-center">
             <h3 class="text-3xl font-bold text-gray-800">10,000</h3>
@@ -294,13 +293,125 @@
         <!-- Contact Info -->
         <div>
           <p class="text-lg font-semibold text-gray-800 mb-2">
-          月～日</p>
+            月～日</p>
           <p class="text-lg font-semibold text-gray-800 mb-6">11AM - 12PM</p>
           <p class="text-2xl font-bold text-orange-500">+94 761122226</p>
         </div>
       </div>
     </section>
 
+    <section class="mt-20">
+      <h2 class="text-6xl text-center mb-14">ケータリングサービス</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-2 justify-items-center">
+        <!-- Birthday Party Card -->
+        <div class="card text-center w-80 bg-gray-100 rounded-lg p-5">
+          <i class="fa fa-birthday-cake text-5xl text-[#fde047] mb-5" aria-hidden="true"></i>
+          <div>
+            <span class="text-lg font-semibold">誕生日パーティー</span>
+          </div>
+          <p class="text-sm mt-4 text-center">カスタマイズされたケータリングサービスで特別な日を祝いましょう。美味しいお料理でお誕生日イベントにぴったり！</p>
+        </div>
+
+        <!-- Business Meetings Card -->
+        <div class="card text-center w-80 bg-gray-100 rounded-lg p-5">
+          <i class="fa fa-users text-5xl text-[#fde047] mb-5" aria-hidden="true"></i>
+          <div>
+            <span class="text-lg font-semibold">ビジネスミーティング</span>
+          </div>
+          <p class="text-sm mt-4 text-center">ビジネス会議や企業イベント向けのプロフェッショナルなケータリング オプションで、クライアントや同僚に感動を与えましょう。</p>
+        </div>
+
+        <!-- Wedding Party Card -->
+        <div class="card text-center w-80 bg-gray-100 rounded-lg p-5">
+          <i class="fa fa-cutlery text-5xl text-[#fde047] mb-5" aria-hidden="true"></i>
+          <div>
+            <span class="text-lg font-semibold">ウェディングパーティー</span>
+          </div>
+          <p class="text-sm mt-4 text-center">お好みやスタイルに合わせた絶妙なメニューで、忘れられない結婚式の日をお過ごしください</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-20 container mx-auto py-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Image on the left -->
+        <img src="/image/food.jpg" alt="Japanese food" class="w-full h-auto">
+
+        <!-- Text and images with icons -->
+        <div>
+          <h3 class="text-3xl font-bold text-gray-800 text- md:text-start">
+          私たちの食べ物を発見してください</h3>
+          <p class="text-sm text-gray-500 mt-4 text-center md:text-start">
+          メニューには、イタリア料理、インド料理、日本料理に至るまで、さまざまなおいしい絶品料理が含まれています
+          料理。ゲストに忘れられない体験を提供するために、それぞれの料理は慎重に選ばれています。
+          </p>
+
+          <!-- Small food images with cart icons -->
+          <div class="mt-5 flex gap-3">
+            <!-- Food item 1 -->
+            <div class="relative w-28 h-32 md:w-56 md:h-64">
+              <img src="/image/smfood1 (2).jpg" alt="Food Item" class="w-full h-full rounded-xl object-cover">
+              <a href="/productpage.php"><i class="fa fa-shopping-cart absolute bottom-2 right-2 text-white bg-black p-2 rounded-full animate-pulse " aria-hidden="true"></i></a>
+            </div>
+            <!-- Food item 2 -->
+            <div class="relative w-28 h-32 md:w-56 md:h-64">
+              <img src="/image/smfood1 (3).jpg" alt="Food Item" class="w-full h-full rounded-xl object-cover">
+              <a href="/productpage.php"><i class="fa fa-shopping-cart absolute bottom-2 right-2 text-white bg-black p-2 rounded-full animate-pulse " aria-hidden="true"></i></a>
+            </div>
+            <!-- Food item 3 -->
+            <div class="relative w-28 h-32 md:w-56 md:h-64">
+              <img src="/image/smfood1.jpg" alt="Food Item" class="w-full h-full rounded-xl object-cover">
+              <a href="/productpage.php"><i class="fa fa-shopping-cart absolute bottom-2 right-2 text-white bg-black p-2 rounded-full animate-pulse " aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="mt-20">
+      <h2 class="text-4xl text-center mb-14">
+      当店のシェフのご紹介</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-2 justify-items-center">
+        <!-- Team Member 1 -->
+        <div class="text-center">
+          <img class="w-80 h-80 object-cover rounded-full mb-6" src="/image/chefs (4).jpg" alt="Team Member 1">
+
+
+          <span class="text-lg font-semibold">マリオ・ロッシシェフ</span>
+          <p class="text-sm text-gray-500">上級総料理長</p>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="text-center">
+          <img class="w-80 h-80 object-cover rounded-full mb-6" src="/image/chefs (1).jpg" alt="Team Member 1">
+
+
+          <span class="text-lg font-semibold">シェフのエミリー・カーター</span>
+          <p class="text-sm text-gray-500">イタリア料理スペシャリスト</p>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="text-center">
+          <img class="w-80 h-80 object-cover rounded-full mb-6" src="/image/chefs (2).jpg" alt="Team Member 1">
+
+
+          <span class="text-lg font-semibold">田中 裕シェフ</span>
+          <p class="text-sm text-gray-500">日本料理スペシャリスト</p>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="text-center">
+          <img class="w-80 h-80 object-cover rounded-full mb-6" src="/image/chefs (3).jpg" alt="Team Member 1">
+
+
+          <span class="text-lg font-semibold">シェフのジョン・ドゥ</span>
+          <p class="text-sm text-gray-500">
+          インド料理スペシャリスト</p>
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -310,7 +421,7 @@
       <div class="text-center sm:text-left">
         <h3 class="text-lg font-semibold text-white mb-4">The Fusion Fork</h3>
         <p class="text-sm">
-         The Fusion Forkでは、イタリア料理、インド料理、日本料理の豊かな風味を融合させ、忘れられない食の体験をご提供します。私たちは、最高品質の料理を競争力のある価格で提供することをお約束します。情熱を込めて作られた多彩なメニューをお楽しみいただき、心ゆくまでご満足ください。</p>
+          The Fusion Forkでは、イタリア料理、インド料理、日本料理の豊かな風味を融合させ、忘れられない食の体験をご提供します。私たちは、最高品質の料理を競争力のある価格で提供することをお約束します。情熱を込めて作られた多彩なメニューをお楽しみいただき、心ゆくまでご満足ください。</p>
         <div class="mt-10">
           <input class="w-56 mx-auto sm:w-56" type="email" required name="email" placeholder="Enter your email address">
         </div>
@@ -319,18 +430,18 @@
 
       <div class="text-center sm:text-left">
         <h3 class="text-lg font-semibold text-white mb-4">
-        営業時間</h3>
+          営業時間</h3>
         <ul class="text-sm">
           <li class="mb-2 hover:text-blue-400">
-          月曜日 - 11:00 - 24:00</li>
+            月曜日 - 11:00 - 24:00</li>
           <li class="mb-2 hover:text-blue-400">火曜日 - 11:00 - 24:00</li>
           <li class="mb-2 hover:text-blue-400">水曜日 - 11:00 - 24:00</li>
           <li class="mb-2 hover:text-blue-400">
-          木曜日 - 11:00 - 24:00</li>
+            木曜日 - 11:00 - 24:00</li>
           <li class="mb-2 hover:text-blue-400">
-          金曜日 - 13:00 - 24:00</li>
+            金曜日 - 13:00 - 24:00</li>
           <li class="mb-2 hover:text-blue-400">
-          土曜日 - 11:00 - 24:00</li>
+            土曜日 - 11:00 - 24:00</li>
           <li class="mb-2 hover:text-blue-400">日曜日 - 11:00 - 24:00</li>
         </ul>
       </div>
@@ -340,11 +451,11 @@
         <h3 class="text-lg font-semibold text-white mb-4">Contact Us</h3>
         <p class="text-sm">
           <span class="font-semibold">
-          住所:</span> 1234 マーケット ストリート、スイート 100<br>
+            住所:</span> 1234 マーケット ストリート、スイート 100<br>
           <span class="font-semibold">
-          電話:</span> (123) 456-7890<br>
+            電話:</span> (123) 456-7890<br>
           <span class="font-semibold">
-          電子メール:</span> support@thefusionfork.com
+            電子メール:</span> support@thefusionfork.com
         </p>
         <!-- Social Media -->
         <div>
@@ -372,7 +483,7 @@
       <!-- Instagram Section -->
       <div class="text-center sm:text-left">
         <h3 class="text-lg font-semibold text-white mb-4">
-        インスタグラム</h3>
+          インスタグラム</h3>
         <img src="/image/Insta.jpg" class="w-56 h-56 rounded-sm mx-auto" alt="Instagram image">
       </div>
     </div>
@@ -461,37 +572,9 @@
     }
   </script>
 
-  <script>
-    document.addEventListener('alpine:init', () => {
-      Alpine.store('lang', {
-        language: JSON.parse(localStorage.getItem('language')) || '',
+ 
 
-        storelanguage(languageselector) {
-          if (['en', 'it', 'jp'].includes(languageselector)) {
-            localStorage.setItem('language', JSON.stringify(languageselector));
-            this.language = languageselector;
-
-            this.updatePageContent(languageselector);
-          }
-        },
-
-        updatePageContent(language) {
-          this.redirectToLanguagePage(language);
-        },
-
-        redirectToLanguagePage(language) {
-          let url = '';
-          if (language === 'it') url = '/pages/it/index.php';
-          if (language === 'jp') url = '/pages/jp/index.php';
-          if (language === 'en') url = '/pages/en/index.php';
-
-          if (url) window.location.href = url;
-        }
-      });
-    });
-  </script>
-
-  <script type="text/javascript" src="Js\store\home.js"></script>
+<script type="text/javascript" src="/Js/appindex.js"></script>
 
 
 </body>
