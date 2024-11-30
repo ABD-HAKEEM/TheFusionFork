@@ -1,6 +1,6 @@
 <?php
 // ProductController.php
-include_once dirname(__DIR__) . '/modle/menu_item.php';
+include_once dirname(__DIR__) . '/model/menu_item.php';
 
 function GetAllProducts() {
     try {
