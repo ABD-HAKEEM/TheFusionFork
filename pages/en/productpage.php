@@ -26,7 +26,7 @@
 
 
 
-  <header class="text-slate-50 ">
+<header class="text-slate-50 ">
     <div class="relative">
       <nav class="main-nav flex justify-end items-left absolute top-0 right-44 w-full z-20 mt-10">
         <ul class="hidden lg:flex list_view space-x-8 mt-10px">
@@ -38,7 +38,7 @@
 
 
           <li class="relative group">
-            <a href="/Unique-food-ingredients/Seasonings.html" class="hover:text-gray-600 text-White">Table Reservation</a>
+            <a href="/pages/en/tablereser.php" class="hover:text-gray-600 text-White">Table Reservation</a>
 
           </li>
           <li class="hover:text-gray-600 text-White">|</li>
@@ -50,16 +50,16 @@
           <li class="hover:text-gray-600 text-White">|</li>
 
           <li class="relative group">
-            <a href="/Unique-food-ingredients/food_colors.html" class="hover:text-gray-600 text-White">Membership</a>
+            <a href="/pages/en/membership.php" class="hover:text-gray-600 text-White">Membership</a>
 
           </li>
           <li class="hover:text-gray-600 text-White">|</li>
           <li class="relative group">
-            <a href="/Unique-food-ingredients/Our_company.html" class="hover:text-gray-600 text-White">About Us</a>
+            <a href="/pages/en/aboutus.php" class="hover:text-gray-600 text-White">About Us</a>
             <ul class="relative left-0 mt-2  shadow-lg rounded-lg hidden group-hover:block">
-              <li><a href="/ChefTable.php"
+              <li><a href="/pages/en/ChefTable.php"
                   class="block  hover:text-gray-600 text-White">Chef Table</a></li>
-              <li><a href="/Unique-food-ingredients/Our_company.html"
+              <li><a href="/pages/en/contactus.php"
                   class="block  hover:text-gray-600 text-White">Enquiry</a></li>
 
             </ul>
@@ -95,7 +95,7 @@
 
 
       <button id="toggleButton"
-        class="md:hidden p-2 bg-orange-400 text-white rounded absolute top-10 right-10 z-50 "
+        class="md:hidden p-2  text-white rounded absolute top-10 right-10 z-50 text-2xl"
         aria-expanded="false" aria-controls="sidebar"><i class="fa fa-bars "></i>
       </button>
 
@@ -109,33 +109,33 @@
 
         <nav class="flex flex-col items-center max-w-xs text-center justify-center mx-auto">
           <ul class="space-y-1">
-            <li><a href="#!"
+            <li><a href="/pages/en/index.php"
                 class="block h-12 text-gray-400 text-lg underline-animation text-orange-400">The Fusion Fork</a></li>
-            <li><a href="#section2"
+            <li><a href="/pages/en/productpage.php"
                 class="block h-12 text-gray-400 text-lg underline-animation text-white">Menu</a>
             </li>
-            <li><a href="#section3"
+            <li><a href="/pages/en/tablereser.php"
                 class="block h-12 text-gray-400 text-lg underline-animation text-white">Table Reservation</a>
             </li>
-            <li><a href="#section4"
+            <li><a href="/pages/en/membership.php"
                 class="block h-12 text-gray-400 text-lg underline-animation text-white">Membership</a></li>
 
-            <li><a href="#section4"
+            <li><a href="/pages/en/aboutus.php"
                 class="block h-12 text-gray-400 text-lg underline-animation text-white">About Us </a></li>
-            <li><a href="/ChefTable.php"
+            <li><a href="/pages/en/ChefTable.php"
                 class="block h-12 text-gray-400 text-lg underline-animation text-white">Chef Table </a></li>
 
-            <li><a href="#section4"
+            <li><a href="/pages/en/contactus.php"
                 class="block h-12 text-gray-400 text-lg underline-animation text-white">Enquiry</a></li>
 
-            <select id="languageSelect"
-              @change="Alpine.store('lang').storelanguage($event.target.value)"
-              class="flex items-center text-sm pe-1 font-medium text-White rounded-md hover:text-blue-600 dark:hover:text-blue-500 md:me-0 bg-transparent">
-              <option value="" disabled selected class="text-white">Select The Language</option>
-              <option value="en" class="text-black">English</option>
-              <option value="it" class="text-black">Italiano</option>
-              <option value="jp" class="text-black">日本語</option>
-            </select>
+                <select id="languageSelect"
+                  @change="Alpine.store('lang').storelanguage($event.target.value)"
+                  class="flex items-center text-sm pe-1 font-medium text-White rounded-md hover:text-blue-600 dark:hover:text-blue-500 md:me-0 bg-transparent">
+                  <option value="" disabled selected class="text-white">Select The Language</option>
+                  <option value="en" class="text-black">English</option>
+                  <option value="it" class="text-black">Italiano</option>
+                  <option value="jp" class="text-black">日本語</option>
+          </select>
 
           </ul>
         </nav>
@@ -206,7 +206,7 @@
           <!-- Product Listing -->
           <template x-for="product in $store.productpage.products" :key="product.id">
             <div class="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-              <img src="/image/food1.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
+              <img x-bind:src="product.image" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
               <div class="p-4">
                 <h2 class="text-lg font-bold text-gray-800" x-text="product.name"></h2>
                 <p class="text-gray-600 mt-2" x-text="`Price: $${product.price}`"></p>

@@ -76,13 +76,13 @@
             <!-- Product Listing -->
             <template x-for="product in $store.productpage.products" :key="product.id">
                 <div class="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                    <img src="/image/food1.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
+                    <img x-bind:src="product.image" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg">
                     <div class="p-4">
                         <h2 class="text-lg font-bold text-gray-800" x-text="product.name"></h2>
                         <p class="text-black mt-2" x-text="`Price: $${product.price}`"></p>
                         <p class="text-gray-500 text-sm mt-1" x-text="product.description"></p>
                         <p class="text-sm text-green-600 font-medium mt-2" x-text="`Stock: ${product.stock_quantity}`"></p>
-                        <button @click="$store.productpage.deleteProduct(product.id)" class="mt-4 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 focus:outline-none">
+                        <button @click="$store.admindelete.deleteProduct(product.id)" class="mt-4 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 focus:outline-none">
                             Delete
                         </button>
                     </div>
@@ -107,5 +107,6 @@
     </div>
 </footer>
 <script src="js/store/productpage.js"></script>
+<script src="js/store/Del_productpage.js"></script>
 </body>
 </html>

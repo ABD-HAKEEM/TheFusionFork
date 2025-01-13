@@ -37,7 +37,7 @@
 
 
           <li class="relative group">
-            <a href="/Unique-food-ingredients/Seasonings.html" class="hover:text-gray-600 text-White">Table Reservation</a>
+            <a href="/pages/en/tablereser.php" class="hover:text-gray-600 text-White">Table Reservation</a>
 
           </li>
           <li class="hover:text-gray-600 text-White">|</li>
@@ -49,16 +49,16 @@
           <li class="hover:text-gray-600 text-White">|</li>
 
           <li class="relative group">
-            <a href="/Unique-food-ingredients/food_colors.html" class="hover:text-gray-600 text-White">Membership</a>
+            <a href="/pages/en/membership.php" class="hover:text-gray-600 text-White">Membership</a>
 
           </li>
           <li class="hover:text-gray-600 text-White">|</li>
           <li class="relative group">
-            <a href="/Unique-food-ingredients/Our_company.html" class="hover:text-gray-600 text-White">About Us</a>
+            <a href="/pages/en/aboutus.php" class="hover:text-gray-600 text-White">About Us</a>
             <ul class="relative left-0 mt-2  shadow-lg rounded-lg hidden group-hover:block">
-              <li><a href="/ChefTable.php"
+              <li><a href="/pages/en/ChefTable.php"
                   class="block  hover:text-gray-600 text-White">Chef Table</a></li>
-              <li><a href="/Unique-food-ingredients/Our_company.html"
+              <li><a href="/pages/en/contactus.php"
                   class="block  hover:text-gray-600 text-White">Enquiry</a></li>
 
             </ul>
@@ -94,7 +94,7 @@
 
 
       <button id="toggleButton"
-        class="md:hidden p-2 bg-orange-400 text-white rounded absolute top-10 right-10 z-50 "
+        class="md:hidden p-2  text-white rounded absolute top-10 right-10 z-50 text-2xl"
         aria-expanded="false" aria-controls="sidebar"><i class="fa fa-bars "></i>
       </button>
 
@@ -108,23 +108,23 @@
 
         <nav class="flex flex-col items-center max-w-xs text-center justify-center mx-auto">
           <ul class="space-y-1">
-            <li><a href="#!"
+            <li><a href="/pages/en/index.php"
                 class="block h-12 text-gray-400 text-lg underline-animation text-orange-400">The Fusion Fork</a></li>
-            <li><a href="#section2"
+            <li><a href="/pages/en/productpage.php"
                 class="block h-12 text-gray-400 text-lg underline-animation text-white">Menu</a>
             </li>
-            <li><a href="#section3"
+            <li><a href="/pages/en/tablereser.php"
                 class="block h-12 text-gray-400 text-lg underline-animation text-white">Table Reservation</a>
             </li>
-            <li><a href="#section4"
+            <li><a href="/pages/en/membership.php"
                 class="block h-12 text-gray-400 text-lg underline-animation text-white">Membership</a></li>
 
-            <li><a href="#section4"
+            <li><a href="/pages/en/aboutus.php"
                 class="block h-12 text-gray-400 text-lg underline-animation text-white">About Us </a></li>
-            <li><a href="/ChefTable.php"
+            <li><a href="/pages/en/ChefTable.php"
                 class="block h-12 text-gray-400 text-lg underline-animation text-white">Chef Table </a></li>
 
-            <li><a href="#section4"
+            <li><a href="/pages/en/contactus.php"
                 class="block h-12 text-gray-400 text-lg underline-animation text-white">Enquiry</a></li>
 
                 <select id="languageSelect"
@@ -289,7 +289,7 @@
 
         <h1 class="text-3xl md:text-4xl font-serif font-extrabold text-gray-800 mb-4">The Fusion Fork</h1>
 
-        <p class="text-lg text-gray-600 mb-6">
+        <p class="text-lg text-gray-600 mb-6 font-Arima">
         Welcome to The Fusion Fork, where culinary artistry meets exceptional hospitality. With 18 years of experience, our team passionately creates a diverse menu of 100 unique dishes, served by 50 dedicated staff members. Join our 15,000 satisfied customers and enjoy an unforgettable gastronomic experience. We are open every day from 11:00 to 00:00. The perfect meal awaits you!</p>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-8">
@@ -330,7 +330,7 @@
           <div>
             <span class="text-lg font-semibold">Birthday Party</span>
           </div>
-          <p class="text-sm mt-4 text-center">Celebrate your special day with our customized catering services. Delicious food, perfect for your birthday event!</p>
+          <p class="text-sm mt-4 text-center text-gray-600">Celebrate your special day with our customized catering services. Delicious food, perfect for your birthday event!</p>
         </div>
 
         <!-- Business Meetings Card -->
@@ -339,7 +339,7 @@
           <div>
             <span class="text-lg font-semibold">Business Meetings</span>
           </div>
-          <p class="text-sm mt-4 text-center">Impress your clients and colleagues with our professional catering options for business meetings and corporate events.</p>
+          <p class="text-sm mt-4 text-center text-gray-600">Impress your clients and colleagues with our professional catering options for business meetings and corporate events.</p>
         </div>
 
         <!-- Wedding Party Card -->
@@ -348,23 +348,26 @@
           <div>
             <span class="text-lg font-semibold">Wedding Party</span>
           </div>
-          <p class="text-sm mt-4 text-center">Make your wedding day unforgettable with our exquisite menu, tailored to fit your taste and style.</p>
+          <p class="text-sm mt-4 text-center text-gray-600">Make your wedding day unforgettable with our exquisite menu, tailored to fit your taste and style.</p>
         </div>
       </div>
     </section>
 
-    <section class="mt-20 container mx-auto py-20">
+
+
+   <section class="mt-20 container mx-auto py-20">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Image on the left -->
         <img src="/image/food.jpg" alt="Japanese food" class="w-full h-auto">
 
         <!-- Text and images with icons -->
         <div>
-          <h3 class="text-3xl font-bold text-gray-800 text- md:text-start">Discover Our Food</h3>
+          <h3 class="text-3xl font-bold text-gray-800 text- md:text-start">
+          Discover Our Food</h3>
           <p class="text-sm text-gray-500 mt-4 text-center md:text-start">
-            Our menu includes a variety of delicious and exquisite dishes, ranging from Italian, Indian, and Japanese
-            cuisines. Each dish is carefully selected to provide an unforgettable experience for our guests.
-          </p>
+          Our menu includes a variety of delicious and exquisite dishes, ranging from Italian, Indian, and Japanese
+          cuisines. Each dish is carefully selected to provide an unforgettable experience for our guests.
+         </p>
 
           <!-- Small food images with cart icons -->
           <div class="mt-5 flex gap-3">

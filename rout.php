@@ -1,7 +1,7 @@
 <?php
 include_once "dbconnection.php";
 include_once __DIR__ . '/Controller/ProductController.php';
-
+include_once __DIR__ . '/Controller/DelProductController.php';
 // Set JSON content type
 header('Content-Type: application/json');
 
@@ -17,10 +17,10 @@ if ($requestURL === 'rout.php') {
             "status" => "error",
             "message" => $e->getMessage()
         ]);
-    }
-} else {
+    }}
+else {
     echo json_encode([
         "status" => "error",
         "message" => "Endpoint not found"
     ]);
-}
+} 

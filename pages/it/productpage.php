@@ -95,10 +95,10 @@
 
 
 
-            <button id="toggleButton"
-                class="md:hidden p-2 bg-orange-400 text-white rounded absolute top-10 right-10 z-50 "
-                aria-expanded="false" aria-controls="sidebar"><i class="fa fa-bars "></i>
-            </button>
+        <button id="toggleButton"
+        class="md:hidden p-2  text-white rounded absolute top-10 right-10 z-50 text-2xl"
+        aria-expanded="false" aria-controls="sidebar"><i class="fa fa-bars "></i>
+      </button>
 
             <!-- Sidebar Section -->
             <div id="sidebar"

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Hanuman&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/bd921df3a8.js" crossorigin="anonymous"></script>
 
@@ -25,160 +26,281 @@
 
 
 
-    <header class="text-slate-50 ">
-        <div class="relative">
-            <nav class="main-nav flex justify-end items-left absolute top-0 right-44 w-full z-20 mt-10">
-                <ul class="hidden lg:flex list_view space-x-8 mt-10px">
-                    <li class="relative group">
-                        <a href="/productpage.php" class="hover:text-gray-600 text-White">Menu</a>
+<header class="text-slate-50 ">
+    <div class="relative">
+      <nav class="main-nav flex justify-end items-left absolute top-0 right-44 w-full z-20 mt-10">
+        <ul class="hidden lg:flex list_view space-x-8 mt-10px">
+          <li class="relative group">
+            <a href="/pages/en/productpage.php" class="hover:text-gray-600 text-black">Menu</a>
 
-                    </li>
-                    <li class="hover:text-gray-600 text-White">|</li>
-
-
-                    <li class="relative group">
-                        <a href="/Table_Reservation.php" class="hover:text-gray-600 text-White">Table Reservation</a>
-
-                    </li>
-                    <li class="hover:text-gray-600 text-White">|</li>
-
-                    <li class="relative group">
-                        <a href="/index.php" class="hover:text-gray-600 text-White">The Fusion Fork</a>
-
-                    </li>
-                    <li class="hover:text-gray-600 text-White">|</li>
-
-                    <li class="relative group">
-                        <a href="#" class="hover:text-gray-600 text-White">Membership</a>
-
-                    </li>
-                    <li class="hover:text-gray-600 text-White">|</li>
-                    <li class="relative group">
-                        <a href="/Unique-food-ingredients/Our_company.html" class="hover:text-gray-600 text-White">About Us</a>
-                        <ul class="relative left-0 mt-2  shadow-lg rounded-lg hidden group-hover:block">
-                            <li><a href="/ChefTable.php"
-                                    class="block  hover:text-gray-600 text-White">Chef Table</a></li>
-                            <li><a href="/Unique-food-ingredients/Our_company.html"
-                                    class="block  hover:text-gray-600 text-White">Enquiry</a></li>
-
-                        </ul>
+          </li>
+          <li class="hover:text-gray-600 text-black">|</li>
 
 
-                </ul>
-                </li>
+          <li class="relative group">
+            <a href="/pages/en/tablereser.php" class="hover:text-gray-600 text-black">Table Reservation</a>
+
+          </li>
+          <li class="hover:text-gray-600 text-black">|</li>
+
+          <li class="relative group">
+            <a href="/pages/en/index.php" class="hover:text-gray-600 text-black">The Fusion Fork</a>
+
+          </li>
+          <li class="hover:text-gray-600 text-black">|</li>
+
+          <li class="relative group">
+            <a href="/pages/en/membership.php" class="hover:text-gray-600 text-black">Membership</a>
+
+          </li>
+          <li class="hover:text-gray-600 text-black">|</li>
+          <li class="relative group">
+            <a href="/pages/en/aboutus.php" class="hover:text-gray-600 text-black">About Us</a>
+            <ul class="relative left-0 mt-2  shadow-lg rounded-lg hidden group-hover:block">
+              <li><a href="/pages/en/ChefTable.php"
+                  class="block  hover:text-gray-600 text-black">Chef Table</a></li>
+              <li><a href="/pages/en/contactus.php"
+                  class="block  hover:text-gray-600 text-black">Enquiry</a></li>
+
+            </ul>
 
 
-                </ul>
-                <div class="sm:hidden md:block">
+        </ul>
+        </li>
 
-                </div>
-            </nav>
+
+        </ul>
+
+
+        <div x-data class="hidden md:block ml-10">
+          <select id="languageSelect"
+            @change="Alpine.store('lang').storelanguage($event.target.value)"
+            class="flex items-center text-sm pe-1 font-medium text-black rounded-md hover:text-blue-600 dark:hover:text-blue-500 md:me-0 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-black bg-transparent">
+            <option value="" disabled selected class="text-black">Select The Language</option>
+            <option value="en" class="text-black">English</option>
+            <option value="it" class="text-black">Italiano</option>
+            <option value="jp" class="text-black">日本語</option>
+          </select>
         </div>
 
 
-
-
-        <div class="md:hidden absolute top-0">
-
-
-
-            <button id="toggleButton"
-                class="md:hidden p-2 bg-orange-400 text-white rounded absolute top-10 right-10 z-50 "
-                aria-expanded="false" aria-controls="sidebar"><i class="fa fa-bars "></i>
-            </button>
-
-            <!-- Sidebar Section -->
-            <div id="sidebar"
-                class="relative sticky w-screen h-screen  bg-black overflow-hidden sidebar transform -translate-x-full md:translate-x-0 z-50">
-                <button id="hideSidebarButton" class="p-2 text-gray-400 top-4 right-10 md:hidden">
-                    <i class="fa fa-arrow-circle-o-left W-24 h-24"></i>
-                </button>
-
-
-                <nav class="flex flex-col items-center max-w-xs mt-16 md:mt-24 text-center justify-center mx-auto">
-                    <ul class="space-y-1">
-                        <li><a href="#!"
-                                class="block h-12 text-gray-400 text-lg underline-animation text-orange-400">The Fusion Fork</a></li>
-                        <li><a href="#section2"
-                                class="block h-12 text-gray-400 text-lg underline-animation text-white">Menu</a>
-                        </li>
-                        <li><a href="#section3"
-                                class="block h-12 text-gray-400 text-lg underline-animation text-white">Table Reservation</a>
-                        </li>
-                        <li><a href="#section4"
-                                class="block h-12 text-gray-400 text-lg underline-animation text-white">Membership</a></li>
-
-                        <li><a href="#section4"
-                                class="block h-12 text-gray-400 text-lg underline-animation text-white">About Us </a></li>
-                        <li><a href="/ChefTable.php"
-                                class="block h-12 text-gray-400 text-lg underline-animation text-white">Chef Table </a></li>
-
-                        <li><a href="#section4"
-                                class="block h-12 text-gray-400 text-lg underline-animation text-white">Enquiry</a></li>
-
-
-
-                    </ul>
-                </nav>
-
-                <div class="md:mt-56">
-                    <ul class="flex space-x-2 mt-5 items-center justify-center mx-auto">
-                        <li><a href="#" class="p-2 text-yellow-500 hover:bg-fuchsia-600 rounded-xl"><span
-                                    class="fab fa-twitter"></span></a></li>
-                        <li><a href="#" class="p-2 text-yellow-500 hover:bg-fuchsia-600 rounded-xl"><span
-                                    class="fab fa-facebook"></span></a></li>
-                        <li><a href="#" class="p-2 text-yellow-500 hover:bg-fuchsia-600 rounded-xl"><span
-                                    class="fab fa-linkedin"></span></a></li>
-                        <li><a href="#" class="p-2 text-yellow-500 hover:bg-fuchsia-600 rounded-xl"><span
-                                    class="fab fa-instagram"></span></a></li>
-                        <li><a href="https://wa.me/message/DXZDJ66XJWI6B1"
-                                class="p-2 text-yellow-500 hover:bg-fuchsia-600 rounded-xl"><span
-                                    class="fab fa-whatsapp"></span></a></li>
-                    </ul>
-
-                    <div class="items-center justify-center mx-auto mt-3">
-                        <p class="text-sm text-gray-100 text-center">
-                            © Copyright 2024 Go-Smart solutions. <br> All rights reserved.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-        </div>
-    </header>
-
-    <main>
-
-    <section class="md:w-screen-lg mx-auto">
-  <div class="container mx-auto p-4 text-center">
-    <h1 class="text-3xl font-bold mb-4">Chef's Table VR Experience</h1>
-    <p class="text-lg mb-6">Immerse yourself in a chef's kitchen and explore the scene in 360°.</p>
-    <div class="relative w-full max-w-3xl mx-auto aspect-w-16 aspect-h-9">
-      <a-scene>
-        <a-assets>
-          <video id="chefTableVideo" src="/image/Restaurant 360° .mp4" autoplay loop="true" crossorigin="anonymous" muted></video>
-        </a-assets>
-
-        <!-- Use a-video to control width and height -->
-        <a-video src="#chefTableVideo" width="4" height="2.25" position="0 1 -4"></a-video>
-
-        <a-light type="ambient" color="#ffffff"></a-light>
-
-        <a-camera position="0 1.0 0">
-          <a-cursor></a-cursor>
-        </a-camera>
-      </a-scene>
+      </nav>
     </div>
-    <p class="text-sm text-gray-400 mt-4">Use your mouse or VR headset to explore the video.</p>
+
+
+
+
+    <div class="md:hidden absolute top-0">
+
+
+
+      <button id="toggleButton"
+        class="md:hidden p-2  text-black rounded absolute top-10 right-10 z-50 text-2xl"
+        aria-expanded="false" aria-controls="sidebar"><i class="fa fa-bars "></i>
+      </button>
+
+      <!-- Sidebar Section -->
+      <div id="sidebar"
+        class="relative sticky w-screen h-screen  bg-black overflow-hidden sidebar transform -translate-x-full md:translate-x-0 z-50">
+        <button id="hideSidebarButton" class="p-2 text-gray-400 top-4 right-10 md:hidden">
+          <i class="fa fa-arrow-circle-o-left W-24 h-24"></i>
+        </button>
+
+
+        <nav class="flex flex-col items-center max-w-xs text-center justify-center mx-auto">
+          <ul class="space-y-1">
+            <li><a href="/pages/en/index.php"
+                class="block h-12 text-gray-400 text-lg underline-animation text-orange-400">The Fusion Fork</a></li>
+            <li><a href="/pages/en/productpage.php"
+                class="block h-12 text-gray-400 text-lg underline-animation text-black">Menu</a>
+            </li>
+            <li><a href="/pages/en/tablereser.php"
+                class="block h-12 text-gray-400 text-lg underline-animation text-black">Table Reservation</a>
+            </li>
+            <li><a href="/pages/en/membership.php"
+                class="block h-12 text-gray-400 text-lg underline-animation text-black">Membership</a></li>
+
+            <li><a href="/pages/en/aboutus.php"
+                class="block h-12 text-gray-400 text-lg underline-animation text-black">About Us </a></li>
+            <li><a href="/pages/en/ChefTable.php"
+                class="block h-12 text-gray-400 text-lg underline-animation text-black">Chef Table </a></li>
+
+            <li><a href="/pages/en/contactus.php"
+                class="block h-12 text-gray-400 text-lg underline-animation text-black">Enquiry</a></li>
+
+                <select id="languageSelect"
+                  @change="Alpine.store('lang').storelanguage($event.target.value)"
+                  class="flex items-center text-sm pe-1 font-medium text-black rounded-md hover:text-blue-600 dark:hover:text-blue-500 md:me-0 bg-transparent">
+                  <option value="" disabled selected class="text-black">Select The Language</option>
+                  <option value="en" class="text-black">English</option>
+                  <option value="it" class="text-black">Italiano</option>
+                  <option value="jp" class="text-black">日本語</option>
+          </select>
+
+          </ul>
+        </nav>
+
+        <div class="mt-36">
+          <ul class="flex space-x-2 mt-5 items-center justify-center mx-auto">
+            <li><a href="#" class="p-2 text-yellow-500 hover:bg-fuchsia-600 rounded-xl"><span
+                  class="fab fa-twitter"></span></a></li>
+            <li><a href="#" class="p-2 text-yellow-500 hover:bg-fuchsia-600 rounded-xl"><span
+                  class="fab fa-facebook"></span></a></li>
+            <li><a href="#" class="p-2 text-yellow-500 hover:bg-fuchsia-600 rounded-xl"><span
+                  class="fab fa-linkedin"></span></a></li>
+            <li><a href="#" class="p-2 text-yellow-500 hover:bg-fuchsia-600 rounded-xl"><span
+                  class="fab fa-instagram"></span></a></li>
+            <li><a href="https://wa.me/message/DXZDJ66XJWI6B1"
+                class="p-2 text-yellow-500 hover:bg-fuchsia-600 rounded-xl"><span
+                  class="fab fa-whatsapp"></span></a></li>
+          </ul>
+
+          <div class="items-center justify-center mx-auto mt-3">
+            <p class="text-sm text-gray-100 text-center">
+              © Copyright 2024 Go-Smart solutions. <br> All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  </header>
+
+<main>
+
+<section class="relative">
+      <div class="relative bg-gray-200 w-full h-96 md:h-screen">
+        
+        <div class="absolute top-1/2 left-1/3 md:left-1/3 transform -translate-x-1/2 -translate-y-1/2 text-start ">
+          <h2 class="text-2xl md:text-6xl font-bold text-black mb-5 font-serif">Reserve Your Table At </h2>
+          <h2 class="text-2xl md:text-6xl font-bold text-black mb-5 font-serif">The Fusion Fork</h2>
+
+
+
+        </div>
+
+      </div>
+      </div>
+</section>
+
+ <!-- Reservation Section -->
+ <section class="relative bg-cover bg-center bg-no-repeat " style="background-image: url('/image/bgimage.jpg');">
+  <div class="flex flex-col md:grid md:grid-cols-2 gap-4">
+
+  
+  <div class="w-full md:w-full flex justify-center ml-10 ">
+        <img src="/image/Hakeem-01.png" alt="Decorative Food Layers" class="rounded-lg shadow-lg">
+      </div>
+  <div class="container mx-auto px-4 py-20 flex flex-wrap justify-between items-center relative z-10">
+  
+
+    <div class="w-full md:w-2/3 text-white">
+      <h2 class="text-4xl font-bold mb-6">Make Reservation</h2>
+      <form action="#" class="grid grid-cols-2 gap-4">
+        <div>
+          <label for="location" class="block text-sm font-medium">Location</label>
+          <select id="location" class="w-full p-2 bg-gray-200 text-black rounded-md">
+            <option>Location 1</option>
+            <option>Location 2</option>
+          </select>
+        </div>
+        <div>
+          <label for="name" class="block text-sm font-medium">Name</label>
+          <input type="text" id="name" placeholder="Your Name" class="w-full p-2 bg-gray-200 text-black rounded-md">
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium">Email</label>
+          <input type="email" id="email" placeholder="Your Email" class="w-full p-2 bg-gray-200 text-black rounded-md">
+        </div>
+        <div>
+          <label for="phone" class="block text-sm font-medium">Phone</label>
+          <input type="text" id="phone" placeholder="Phone" class="w-full p-2 bg-gray-200 text-black rounded-md">
+        </div>
+        <div>
+          <label for="date" class="block text-sm font-medium">Date</label>
+          <input type="date" id="date" class="w-full p-2 bg-gray-200 text-black rounded-md">
+        </div>
+        <div>
+          <label for="time" class="block text-sm font-medium">Time</label>
+          <input type="time" id="time" class="w-full p-2 bg-gray-200 text-black rounded-md">
+        </div>
+        <div>
+          <label for="person" class="block text-sm font-medium">Person</label>
+          <input type="number" id="person" placeholder="Persons" class="w-full p-2 bg-gray-200 text-black rounded-md">
+        </div>
+        <div class="col-span-2">
+          <button type="submit" class="w-full bg-black text-white p-3 rounded-md">Make a Reservation</button>
+        </div>
+      </form>
+    </div>
+  </div>
   </div>
 </section>
 
 
+  <!-- Recent Posts Section -->
+  <section class="container mx-auto px-4 py-16 max-w-screen-lg  items-center justify-center">
+    <h2 class="text-3xl font-bold text-center mb-10">Recent Posts</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="/image/imagerec1.jpg" alt="Delicious Food" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <p class="text-gray-500 text-sm">Sept 06, 2019 Admin</p>
+          <h3 class="text-xl font-bold mt-2">Taste the delicious foods in Asia</h3>
+          <a href="#" class="text-yellow-700 font-medium mt-4 inline-block">Read more</a>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="/image/imagerec2.jpg" alt="Delicious Food" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <p class="text-gray-500 text-sm">Sept 06, 2019 Admin</p>
+          <h3 class="text-xl font-bold mt-2">Taste the delicious foods in Asia</h3>
+          <a href="#" class="text-yellow-700 font-medium mt-4 inline-block">Read more</a>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="/image/imagerec3.jpg" alt="Delicious Food" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <p class="text-gray-500 text-sm">Sept 06, 2019 Admin</p>
+          <h3 class="text-xl font-bold mt-2">Taste the delicious foods in Asia</h3>
+          <a href="#" class="text-yellow-700 font-medium mt-4 inline-block">Read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    </main>
+  <!-- Happy Customers Section -->
+  <section class=" py-16 max-w-screen-lg mx-auto flex items-center justify-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Happy Customers</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <img src="/image/cust1 (1).jpg" alt="Ian Boner" class="w-24 h-24 mx-auto rounded-full">
+          <p class="mt-4 text-gray-700">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          <h4 class="font-bold mt-2">Ian Boner</h4>
+          <p class="text-sm text-gray-500">Customer</p>
+        </div>
+        <div class="text-center">
+          <img src="/image/cust1 (2).jpg" alt="Jason McClean" class="w-24 h-24 mx-auto rounded-full">
+          <p class="mt-4 text-gray-700">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          <h4 class="font-bold mt-2">Jason McClean</h4>
+          <p class="text-sm text-gray-500">Customer</p>
+        </div>
+        <div class="text-center">
+          <img src="/image/cust1 (3).jpg" alt="Mark Stevenson" class="w-24 h-24 mx-auto rounded-full">
+          <p class="mt-4 text-gray-700">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          <h4 class="font-bold mt-2">Mark Stevenson</h4>
+          <p class="text-sm text-gray-500">Customer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
 
     <footer class="bg-gray-800 text-gray-200 py-10 mt-10">
         <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
